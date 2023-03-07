@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6tMUBkjVg7PPDm/JgKxgzzyY3qvN2nhLDlrzqob8W6aM37EMtgHmgQBtPdXZ2Qk+w+vZstJ9E0dDACh60p22oA==",
+  "dgSpecHash": "SOKCfT5oSMMW8ABpGrJzO7YHT6fJM22flogAgJsnqF6UXY/gfvRckBG9420eHt0Jt8mz1vJfwFbRM3GzMH6D7Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kelly.osoba\\source\\repos\\CICDGithubAction.WPF\\CICDGithubAction.WPF\\CICDGithubAction.WPF.csproj",
+  "projectFilePath": "C:\\Users\\DELL\\Desktop\\Apps\\WPFCICD\\Github-CICD-wpf\\CICDGithubAction.WPF\\CICDGithubAction.WPF.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

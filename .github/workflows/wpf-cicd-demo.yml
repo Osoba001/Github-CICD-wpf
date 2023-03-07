@@ -1,0 +1,49 @@
+name: "Deploy Github Action CICD Demo"
+
+on:
+  push:
+    tags:
+      - "cicd-demo/v*"
+
+env:
+  PROJECT-PATH: CICDGithubAction.WPF/CICDGithubAction.WPF.csproj
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Install .Net core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+
+    - name: Restore project
+      run: dotnet restore ${{ env.PROJECT-PATH }}
+
+    - name: Build
+      run:  dotnet build ${{ env.PROJECT-PATH }} -c Release --no-restore
+
+    - name: Publish 
+      run: dotnet publish ${{ env.PROJECT-PATH }} -c Release --self-contained -r win-x64 -p:PublishSingleFile=true --no-build
+
+    - name: Create a Release
+      uses: actions/create-release@v1
+      id: create_release
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: ${{ github.ref }}
+
+    - name: Upload to release
+      uses: csexton/release-asset-action@v2
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        pattern: CICDGithubAction.WPF/bin/Release/net6.0-windows/*.exe
+        release-url: ${{ steps.create_release.outputs.upload_url }}
+
