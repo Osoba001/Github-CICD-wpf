@@ -6,7 +6,7 @@ on:
       - "cicd-demo/v*"
 
 env:
-  PROJECT-PATH: CICDGithubAction.WPF/CICDGithubAction.WPF.csproj
+  PROJECT-PATH: CICDGithubAction.WPF.csproj
 
 jobs:
   deploy:
