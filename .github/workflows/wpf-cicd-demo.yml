@@ -4,9 +4,16 @@ on:
   push:
     tags:
       - "cicd-demo/v*"
+  pull_request:
+    tags:
+      - "cicd-demo/v*"
 
 env:
   PROJECT-PATH: CICDGithubAction.WPF/CICDGithubAction.WPF.csproj
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   deploy:
