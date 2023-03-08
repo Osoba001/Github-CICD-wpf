@@ -24,7 +24,7 @@ jobs:
       run: dotnet restore ${{ env.PROJECT_PATH }}
 
     - name: Build
-      run:  dotnet build ${{ env.PROJECT_PATH }} -c Release
+      run:  dotnet build ${{ env.PROJECT_PATH }} -c Release --no-restore -p:PublishSingleFile=true
 
     - name: Run tests
       run: dotnet test --no-restore --verbosity normal
