@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "SOKCfT5oSMMW8ABpGrJzO7YHT6fJM22flogAgJsnqF6UXY/gfvRckBG9420eHt0Jt8mz1vJfwFbRM3GzMH6D7Q==",
+  "dgSpecHash": "HFw+VL31Qg2qJ797k1Qw4I4XfXy2TjUF1AcKjNS6/UkaZUfQ8mpRa5lbgLBJ7ahMXL/N4/amOuxqCqYIfUdtrg==",
   "success": true,
   "projectFilePath": "C:\\Users\\DELL\\Desktop\\Apps\\WPFCICD\\Github-CICD-wpf\\CICDGithubAction.WPF\\CICDGithubAction.WPF.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.11\\microsoft.netcore.app.runtime.win-x64.6.0.11.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.11\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.11.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.11\\microsoft.aspnetcore.app.runtime.win-x64.6.0.11.nupkg.sha512"
+  ],
   "logs": []
 }
