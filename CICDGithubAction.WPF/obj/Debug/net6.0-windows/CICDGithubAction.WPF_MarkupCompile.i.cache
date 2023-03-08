@@ -1,7 +1,7 @@
 ﻿CICDGithubAction.WPF
 1.0.0.0
 
-exe
+winexe
 C#
 .cs
 C:\Users\DELL\Desktop\Apps\WPFCICD\Github-CICD-wpf\CICDGithubAction.WPF\obj\Debug\net6.0-windows\
