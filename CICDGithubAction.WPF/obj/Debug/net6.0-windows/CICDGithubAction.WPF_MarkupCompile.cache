@@ -1,7 +1,7 @@
 ﻿CICDGithubAction.WPF
 
 
-winexe
+exe
 C#
 .cs
 C:\Users\DELL\Desktop\Apps\WPFCICD\Github-CICD-wpf\CICDGithubAction.WPF\obj\Debug\net6.0-windows\
@@ -16,5 +16,5 @@ C:\Users\DELL\Desktop\Apps\WPFCICD\Github-CICD-wpf\CICDGithubAction.WPF\App.xaml
 194-2004305220
 MainWindow.xaml;
 
-False
+True
 
